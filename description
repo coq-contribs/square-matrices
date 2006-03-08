@@ -1,0 +1,13 @@
+Name: SquareMatrices
+Title: From Fast Exponentiation to Square Matrices
+Author: Jean-Christophe Filliâtre
+Institution: CNRS - Université Paris Sud
+Description: 
+  This development is a formalization of Chris Okasaki's article
+  ``From Fast Exponentiation to Square Matrices: An Adventure in Types''
+Keywords: 
+  exponentiation, vector, matrix, polymorphic recursion, nested datatype
+Version: 8.0cvs
+
+
+
