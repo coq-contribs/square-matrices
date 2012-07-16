@@ -19,6 +19,7 @@
   ``From Fast Exponentiation to Square Matrices: An Adventure in Types''
 *)
 
+Set Asymmetric Patterns.
 Set Implicit Arguments.
 
 Require Export Arith.
