@@ -22,6 +22,8 @@
 Set Asymmetric Patterns.
 Set Implicit Arguments.
 
+Require Extraction.
+
 Require Export Arith.
 Open Scope nat_scope.
 
