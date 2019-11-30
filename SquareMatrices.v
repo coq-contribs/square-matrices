@@ -68,11 +68,11 @@ Fixpoint fastexp
       @fastexp (c*x) (x*x) (half (S p)) (half_inv h hp)
   end (refl_equal n).
 
-Implicit Arguments fastexp [].
+Arguments fastexp : clear implicits.
 
 Definition exp x n (h:half_dom n) := fastexp 1 x n h.
 
-Implicit Arguments exp [].
+Arguments exp : clear implicits.
 
 Definition half_dom_5 : half_dom 5. auto. Defined.
 
@@ -161,12 +161,12 @@ Fixpoint vcreate_
          (@vcreate_ _ _ (v,w) (w,w) (half (S p)) (half_inv h hp)))
   end (refl_equal n).
 
-Implicit Arguments vcreate_ [A B].
+Arguments vcreate_ [A B].
 
 Definition vcreate (A:Set) (a:A) (n:nat) : vector A :=
   vcreate_ tt a n (half_dom_all n).
 
-Implicit Arguments vcreate [A].
+Arguments vcreate [A].
 
 Eval compute in vcreate 1 5.
 Eval compute in vcreate 1 8.
@@ -341,7 +341,7 @@ Definition mcreate (A:Set) (a:A) (n:nat) (h:half_dom n) :
   square A :=
   @mcreate_ Empty Id (fun _ _ => tt) (fun _ x => x) A a n h.
 
-Implicit Arguments mcreate [A].
+Arguments mcreate [A].
 
 Eval compute in mcreate 1 5 half_dom_5.
 Eval compute in mcreate 1 8 half_dom_8.
